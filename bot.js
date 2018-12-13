@@ -884,4 +884,4 @@ client.on('message', function(message) {
     }
     }
     });
-                        client.login(process.env.USER_TOKEN);
+                        client.login(process.env.BOT_TOKEN);
