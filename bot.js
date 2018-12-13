@@ -587,7 +587,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
                
 
 
-client.on("guildMemberAdd", member => {
+/*client.on("guildMemberAdd", member => {
 let welcomer = member.guild.channels.find("name","swalf-سوالف");
       if(!welcomer) return;
       if(welcomer) {
@@ -604,7 +604,7 @@ let welcomer = member.guild.channels.find("name","swalf-سوالف");
                
  
       }
-      });
+      });*/
 
 /*var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
@@ -707,7 +707,7 @@ ctx.fillText(`Welcome To .....`
                         , 120, 20);
                         
  client.channels.get("522728730393837588").sendFile(canvas.toBuffer())
-          client.channels.get("522728730393837588").send(`**Welcome** ${member} To **${member.guild.name}**`)
+          client.channels.get("522728730393837588").send(`**Welcome** ${member} To **Deluxe Server**`)
            
           
        
