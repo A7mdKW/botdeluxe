@@ -9,7 +9,7 @@ client.on('ready', () => {
     client.user.setGame('Deluxe ','https://www.twitch.tv/a7mddkw');
    client.on('ready', function(){
     var ms = 1000 ;
-    var setGame = [`Petronas `,` Bot`,`|`,`Best`,`Server`];
+    var setGame = [`D `,` De`,`Del`,`Delu`,`Delux`,`Deluxe`];
     var i = -1;
     var j = 0;
     setInterval(function (){
