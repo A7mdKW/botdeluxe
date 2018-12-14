@@ -587,7 +587,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
                
 
 
-/*client.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
 let welcomer = member.guild.channels.find("name","swalf-سوالف");
       if(!welcomer) return;
       if(welcomer) {
@@ -604,7 +604,7 @@ let welcomer = member.guild.channels.find("name","swalf-سوالف");
                
  
       }
-      });*/
+      });
 
 /*var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
