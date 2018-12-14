@@ -21,7 +21,7 @@ client.on('ready', () => {
         }
         i = i+j;
         client.user.setGame(setGame[i],`http://www.twitch.tv/idk`);
-    }, ms);100
+    }, ms);10
 
 });
 });
