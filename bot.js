@@ -6,7 +6,7 @@ const moment = require('moment');
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
    client.user.setStatus("idle")
-    client.user.setGame('Deluxe ','https://www.twitch.tv/a7mddkw');
+    client.user.setGame('Domain | سيرفر دومين','https://www.twitch.tv/a7mddkw');
    client.on('ready', function(){
     var ms = 1000 ;
     var setGame = [`D `,` De`,`Del`,`Delu`,`Delux`,`Deluxe`];
