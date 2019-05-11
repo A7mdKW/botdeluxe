@@ -666,8 +666,8 @@ client.on('guildMemberAdd',async member => {
 ctx.fillText(`Welcome To .....`
                         , 120, 20);
                         
- client.channels.get("522728730393837588").sendFile(canvas.toBuffer())
-          client.channels.get("522728730393837588").send(`**Welcome** ${member} To **Deluxe Server**`)
+ client.channels.get("575776006066143234").sendFile(canvas.toBuffer())
+          client.channels.get("575776006066143234").send(`**Welcome** ${member} To **Deluxe Server**`)
            
           
        
