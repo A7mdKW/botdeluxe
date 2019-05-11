@@ -294,13 +294,13 @@ client.on('message', message => {
         message.reply('**وعليكم السلام**');
     }
 });client.on('message', message => {
-    if(message.content === 'سلام '){
-        message.reply('**وعليكم السلام**');
+    if(message.content === 'تسجيل دخول '){
+        message.reply('**✅ تم تسجيل دخولك **');
     }
 });
 client.on('message', message => {
-    if(message.content === 'تسجيل دخول '){
-        message.reply('** ✅ تم تسجيل دخولك**');
+    if(message.content === 'تسجيل دخول'){
+        message.reply('**✅ تم تسجيل دخولك  **');
     }
 });
 client.on('message', message => {
