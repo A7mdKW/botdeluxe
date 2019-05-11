@@ -641,9 +641,7 @@ client.on('guildMemberAdd', member => {
          
 
  
-});
-});
-});
+
           
           client.on('message', message => {
             if(!message.channel.guild) return;
