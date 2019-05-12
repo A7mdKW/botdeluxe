@@ -618,20 +618,26 @@ client.on('guildMemberAdd', member => {
       if (!channel) return;
     let embed = new Discord.RichEmbed()
         .setColor('#36393e')
+        
         .setThumbnail(memberavatar)
-		.setImage('https://cdn.discordapp.com/attachments/369883019055726592/576892746539860029/123123.png')
-        .addField('💬 | Name :  ',`${member}`)
-        .addField('📢 | نورت السيرفر' , `WelCome To Server, ${member}`)
-                .addField('➡| انت العضو رقم',`${member.guild.memberCount}`)
-               
-                  .addField("حياك الله ! :revolving_hearts: ",`<@` + `${member.id}` + `>`, true)
-                     
-                                     .addField(' Server:', `${member.guild.name}`,true)
+		
+	.setImage('https://cdn.discordapp.com/attachments/352016139762532363/577106235757821963/1b1fc86bac2d4a26.png')
+        
+        .addField('💬 | اسمك :  ',`${member}`)
+        
+        .addField('📢 | نورت السيرفر' , `${member}`)
+        
+        .addField('➡| انت العضو رقم',` **${member.guild.memberCount}**`)
+        
+        .addField("حياك الله ! :revolving_hearts: ",`<@` + `${member.id}` + `>`, true)
+        
+        .addField(' سيرفر :', `${member.guild.name}`,true)
                                        
-     .setFooter(`DV : NayerAZ , Ahmad KW`)
+        .setFooter(`DV : NayerAZ`)
+        
         .setTimestamp()
    
-      channel.sendEmbed(embed);
+        channel.sendEmbed(embed);
     });
 
 
