@@ -652,7 +652,7 @@ client.on('guildMemberAdd', member => {
          var m = member.user;
         let yumz = new Discord.RichEmbed()
         .setColor('#ff0000')
-        .setThumbnail(m.avatarURL)
+         .setThumbnail(memberavatar)
         .setAuthor(m.username,m.avatarURL)
         .addField(': تاريخ دخولك الدسكورد',`${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} **\n** \`${moment(member.user.createdAt).fromNow()}\``,true)            
       
