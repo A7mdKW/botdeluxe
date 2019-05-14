@@ -639,7 +639,7 @@ client.on('guildMemberAdd', member => {
     
    
         channel.sendEmbed(embed);
-        hero.channels.get("575776006066143234").send(`حياك ${member} الى **${member.guild.name}**`)
+       
     });
     
 
