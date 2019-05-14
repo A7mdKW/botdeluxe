@@ -633,12 +633,15 @@ client.on('guildMemberAdd', member => {
         
         .addField(' سيرفر :', `${member.guild.name}`,true)
                                        
-        .setFooter(`DV : NayerAZ`)
+        .setFooter(`DV : Ahmad KW , NayerAZ`)
         
         .setTimestamp()
+    
    
         channel.sendEmbed(embed);
+        hero.channels.get("575776006066143234").send(`حياك ${member} الى **${member.guild.name}**`)
     });
+    
 
 
 
