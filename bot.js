@@ -540,18 +540,23 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
   let args = message.content.split(" ").slice(1);
 
 // ?say
+ client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+// ?say
   if (command === "say") {
+	     if(!message.member.hasPermission('ADMINSTRATOR')) return message.reply('⚠ | **ليس لديك صلاحيات**');
           message.delete()
     message.channel.sendMessage(args.join(" ")).catch(console.error);
   }
   
 
-});
-   client.on('guildCreate', guild => {
-  var embed = new Discord.RichEmbed()
-  .setColor(0000000)
-  .setDescription(`**شكراً لك لإضافه البوت الى سيرفرك**`)
-      guild.owner.send(embed)
 });
 
  client.on('message', message => { //bot
