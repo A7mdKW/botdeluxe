@@ -551,7 +551,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
 
 // ?say
   if (command === "say") {
-	     if(!message.member.hasPermission('ADMINSTRATOR')) return message.reply('⚠ | **ليس لديك صلاحيات**');
+	     if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('⚠ | **ليس لديك صلاحيات**');
           message.delete()
     message.channel.sendMessage(args.join(" ")).catch(console.error);
   }
