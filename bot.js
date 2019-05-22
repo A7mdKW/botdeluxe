@@ -40,69 +40,6 @@ client.on('ready', () => {
   console.log('')
   console.log('╚[════════════════════════════════════]╝')
 });
-//my server 7Disaster
-
-
-const roles = {
-    "pubg": "508713685615902729",
-    "fort": "508713682927222784",
-    "b04": "508716228119101461",
-   /* "php": "431735717568446485",
-    "php": "431735717568446485",
-    "php": "431735717568446485",
-    "php": "431735717568446485",
-    "php": "431735717568446485",*/
-     
-};
-
-function getMember(guild,user) {
-    return client.guilds.get(guild).members.get(user);
-};
-client.on("raw", event =>
-{
-    if (event.t === "MESSAGE_REACTION_ADD" || event.t == "MESSAGE_REACTION_REMOVE")
-    {
-        if( event.d.message_id == "508716557627817984"){
-            if( roles[event.d.emoji.name] ){
-                var member = getMember("508075670392537099",event.d.user_id);
-                if( member.roles.get(roles[event.d.emoji.name]) ){
-                    member.removeRole(roles[event.d.emoji.name]);
-                } else {
-                    member.addRole(roles[event.d.emoji.name]);
-                }
-            }
-        }
-    }
-});
-
-
-/*const roles = {
-    
-    "fort": "483391693522075650"
-    
-   
-    
-};
-function getMember(guild,user) {
-    return client.guilds.get(guild).members.get(user);
-};
-client.on("raw", event =>
-{
-    if (event.t === "MESSAGE_REACTION_ADD" || event.t == "MESSAGE_REACTION_REMOVE")
-    {
-        if( event.d.message_id == "487667034726072320"){
-            if( roles[event.d.emoji.name] ){
-                var member = getMember("409055346108399617",event.d.user_id);
-                if( member.roles.get(roles[event.d.emoji.name]) ){
-                    member.removeRole(roles[event.d.emoji.name]);
-                } else {
-                    member.addRole(roles[event.d.emoji.name]);
-                }
-            }
-        }
-    }
-});
-*/
 
 
 client.on('guildMemberAdd', member=> {
